@@ -1,0 +1,10 @@
+
+<ul>
+    <li *ngFor="let cata of cataList; let i = index">
+        <a href="#" [class.active]="selectedNum === i" (click)="selectedNum = i">{{cata.title}}</a>
+        <span class="indicator" *ngIf="i == selectedNum;  else elseTemp"></span>
+    </li>
+   
+    <ng-template #elseTemp></ng-template>
+    
+</ul>
