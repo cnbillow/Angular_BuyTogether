@@ -1,0 +1,11 @@
+
+<!-- 轮播图应存放于一个container中，容器的高度应该可以调整。轮播组建分为上下两部分，上半部分展示图片，下半部分展示序号 -->
+
+<div class="container">
+    <div class="imgBox">
+        <img *ngFor="let slider of sliders" [src]="slider.link" [alt]="slider.description">
+    </div>
+    <div>
+        <span *ngFor="let item of sliders" ></span>
+    </div>
+</div>

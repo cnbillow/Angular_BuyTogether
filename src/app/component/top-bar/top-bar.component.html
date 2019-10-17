@@ -4,7 +4,6 @@
         <a href="#" [class.active]="selectedNum === i" (click)="selectedNum = i">{{cata.title}}</a>
         <span class="indicator" *ngIf="i == selectedNum;  else elseTemp"></span>
     </li>
-   
     <ng-template #elseTemp></ng-template>
     
 </ul>

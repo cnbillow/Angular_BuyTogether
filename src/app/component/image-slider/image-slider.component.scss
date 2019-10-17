@@ -1,0 +1,12 @@
+.container {
+    display: relative; //这一步
+    height:160px;
+    overflow: hidden;
+}
+
+.imgBox {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    overflow-x: scroll;
+}
