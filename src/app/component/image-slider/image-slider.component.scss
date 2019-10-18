@@ -1,12 +1,23 @@
-.container {
-    display: relative; //这一步
-    height:160px;
+.container { //这一步
     overflow: hidden;
+    position: relative;
 }
 
-.imgBox {
+.container .imgBox {
     display: flex;
-    flex-direction: row;
-    width: 100%;
     overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
 }
+
+.container img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    scroll-snap-align: start;
+}
+
+.container .image-slider::-webkit-scrollbar {
+    display: none;
+    width: 0 !important;
+  }

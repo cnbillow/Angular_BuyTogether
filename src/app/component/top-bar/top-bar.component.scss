@@ -1,20 +1,27 @@
+ul {
+    overflow-x:auto;
+    -webkit-overflow-scrolling: touch;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    background-color: indianred;
+}
+
 ul li{
-    display:inline-block;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
     margin: 0 5px;
     padding: 0;
     white-space: nowrap;
 }
 
-ul {
-    margin: 0;
-    padding: 0px;
-    display: flex;
-    justify-content: space-between;
-    background-color: lightblue;
-}
+
 a {
     text-decoration: none;
-    color: coral;
+    color: white;
 }
 
 ::-webkit-scrollbar {  //不显示滚动条
@@ -22,7 +29,7 @@ a {
 }
 
 .active {
-    color: red;
+    color: yellow;
     border-bottom: 2px;
 }
 
@@ -31,3 +38,5 @@ a {
     height: 2px;
     width: 2rem;
 }
+
+

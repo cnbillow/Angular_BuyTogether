@@ -1,1 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
+想要完全贴合，需要在style中设置，而非app-component中设置。
+
+html, body, app-root {
+    margin: 0;
+    padding: 0;
+}
