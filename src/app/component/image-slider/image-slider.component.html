@@ -5,7 +5,8 @@
     <div class="imgBox">
         <img *ngFor="let slider of sliders" [src]="slider.link" [alt]="slider.description">
     </div>
-    <div>
-        <span *ngFor="let item of sliders" ></span>
+    <div class="indicator"> 
+        
+        <span *ngFor="let _ of sliders;let i = index" class="selectedButton"> </span>
     </div>
 </div>
