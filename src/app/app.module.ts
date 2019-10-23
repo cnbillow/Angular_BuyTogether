@@ -5,12 +5,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { TopBarComponent } from './component/top-bar/top-bar.component';
 import { ImageSliderComponent } from './component/image-slider/image-slider.component';
+import { HorizontalGridComponent } from './component/horizontal-grid/horizontal-grid.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TopBarComponent,
-    ImageSliderComponent
+    ImageSliderComponent,
+    HorizontalGridComponent
   ],
   imports: [
     BrowserModule,

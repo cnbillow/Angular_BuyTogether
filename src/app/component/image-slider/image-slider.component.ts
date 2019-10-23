@@ -20,7 +20,7 @@ export class ImageSliderComponent implements OnInit,AfterViewInit {
   @ViewChild('slider',{static:true}) slider:ElementRef;
   constructor(private rd2: Renderer2) { }
   intervalId:any;
-  selectedIndex:number;
+  selectedIndex= 0;
   ngOnInit() {
   }
 
@@ -35,14 +35,22 @@ export class ImageSliderComponent implements OnInit,AfterViewInit {
           this.slider.nativeElement.scrollWidth) /
           this.sliders.length
       );
-    },1000);
+      
+    },2000);
   }
 
   getIndex(index:number){
     return index>=0? index% this.sliders.length 
     : this.sliders.length-(Math.abs(index)%this.sliders.length)
-
-
   }
 
+  
+    handleScroll(ev) {
+      const ratio =
+        ev.target.scrollLeft / (ev.target.scrollWidth / this.sliders.length);
+      this.selectedIndex = Math.round(ratio);
+    }
+  
 }
+
+
