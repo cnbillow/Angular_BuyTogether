@@ -1,0 +1,31 @@
+.container{
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-rows: 60px 60px;
+    overflow-x: auto;
+    ::-webkit-scrollbar {display: none}
+}
+
+.container .channelBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5px;
+    justify-content: space-between;
+}
+
+.channelBox img {
+    object-fit: cover;
+    width: 30px;
+    height: 30px;
+}
+
+.channelBox .channelTitle {
+    font-size: 0.5rem;
+    white-space: nowrap;
+}
+
+.scrollBar {
+    height: 2px;
+    background-color: red;
+}
