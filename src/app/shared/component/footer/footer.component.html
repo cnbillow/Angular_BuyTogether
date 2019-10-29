@@ -1,0 +1,11 @@
+<div class="footer">
+    <div class="container">
+        <div class="moduleBox" *ngFor="let tabItem of tabItems; let idx = index">
+            <img [src]="selectedIndex == idx?tabItem.icon:tabItem.selectedIcon" 
+            alt="" (click)="toggleSelected(idx)"
+             
+            >
+            <span>{{tabItem.title}}</span>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,33 @@
+
+
+:host {
+    position: fixed;
+    bottom: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.container .moduleBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.moduleBox img {
+    height: 2rem;
+    width: 2rem;
+    margin: 4px;
+    object-fit: cover;
+}
+
+.moduleBox span {
+    font-size: 0.6rem;
+}

@@ -1,17 +1,21 @@
-import { Component } from '@angular/core';
-import {cata} from './shared/component/top-bar';
-import {slider} from './shared/component/image-slider';
-import { channel } from './shared/component/horizontal-grid';
+import { Component, OnInit } from '@angular/core';
+import { cata } from 'src/app/shared/component/top-bar';
+import { slider } from 'src/app/shared/component/image-slider';
+import { channel } from 'src/app/shared/component/horizontal-grid';
+
+
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  selector: 'app-home-container',
+  templateUrl: './home-container.component.html',
+  styleUrls: ['./home-container.component.scss']
 })
+export class HomeContainerComponent implements OnInit {
 
-export class AppComponent {
-  title = 'pinduoduo';
+  constructor() { }
 
-  //TopBar数据
+  ngOnInit() {
+  }
+  
   cataList: cata[] = [
     {
       title:"热门", //接口内的不同属性用逗号分割，而不是分号。

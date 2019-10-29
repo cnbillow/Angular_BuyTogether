@@ -25,7 +25,12 @@
     white-space: nowrap;
 }
 
+.scrollBox{
+    margin:0 auto;
+}
+
 .scrollBar {
+    width: 20%;
     height: 2px;
     background-color: red;
 }
